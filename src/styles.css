@@ -67,25 +67,25 @@ body.loaded .loader {
   width: 320px;
   border-radius: 999px;
   background:
-    radial-gradient(circle, rgba(56, 189, 248, 0.12), transparent 62%),
-    radial-gradient(circle at 70% 30%, rgba(168, 85, 247, 0.16), transparent 48%);
+    radial-gradient(circle, rgba(56, 189, 248, 0.08), transparent 62%),
+    radial-gradient(circle at 70% 30%, rgba(99, 102, 241, 0.1), transparent 48%);
   mix-blend-mode: screen;
   filter: blur(2px);
 }
 
 .bg-grid {
   background-image:
-    linear-gradient(rgba(56, 189, 248, 0.12) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(56, 189, 248, 0.12) 1px, transparent 1px);
+    linear-gradient(rgba(56, 189, 248, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(56, 189, 248, 0.08) 1px, transparent 1px);
   background-size: 72px 72px;
   mask-image: radial-gradient(circle at center, black 0%, transparent 72%);
 }
 
 .bg-radials {
   background:
-    radial-gradient(circle at 18% 20%, rgba(56, 189, 248, 0.18), transparent 24%),
-    radial-gradient(circle at 82% 18%, rgba(124, 58, 237, 0.24), transparent 27%),
-    radial-gradient(circle at 55% 80%, rgba(14, 165, 233, 0.12), transparent 30%),
+    radial-gradient(circle at 18% 20%, rgba(56, 189, 248, 0.12), transparent 24%),
+    radial-gradient(circle at 82% 18%, rgba(99, 102, 241, 0.12), transparent 27%),
+    radial-gradient(circle at 55% 80%, rgba(14, 165, 233, 0.08), transparent 30%),
     linear-gradient(180deg, rgba(3, 7, 18, 0.2), #030712 82%);
 }
 
@@ -106,7 +106,7 @@ body.loaded .loader {
   border: 1px solid rgba(207, 250, 254, 0.65);
   background: #e0f2fe;
   color: #020617;
-  box-shadow: 0 0 46px rgba(56, 189, 248, 0.32);
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.18);
 }
 
 .magnetic-secondary {
@@ -118,7 +118,7 @@ body.loaded .loader {
 
 .magnetic-btn:hover {
   border-color: rgba(103, 232, 249, 0.8);
-  box-shadow: 0 0 48px rgba(56, 189, 248, 0.26);
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.14);
 }
 
 .floating-terminal {
@@ -131,7 +131,7 @@ body.loaded .loader {
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.095), rgba(255, 255, 255, 0.035)),
     rgba(2, 6, 23, 0.7);
-  box-shadow: 0 0 70px rgba(56, 189, 248, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 42px rgba(56, 189, 248, 0.11), inset 0 1px 0 rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(24px);
 }
 
@@ -139,7 +139,7 @@ body.loaded .loader {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(transparent, rgba(56, 189, 248, 0.11), transparent);
+  background: linear-gradient(transparent, rgba(56, 189, 248, 0.07), transparent);
   animation: scan 5s linear infinite;
 }
 
@@ -160,7 +160,7 @@ body.loaded .loader {
   background: rgba(2, 6, 23, 0.7);
   padding: 0.9rem 1rem;
   color: #cffafe;
-  box-shadow: 0 0 36px rgba(124, 58, 237, 0.22);
+  box-shadow: 0 0 28px rgba(56, 189, 248, 0.1);
   backdrop-filter: blur(18px);
 }
 
@@ -184,14 +184,14 @@ body.loaded .loader {
   opacity: 0;
   background:
     linear-gradient(90deg, transparent, rgba(56, 189, 248, 0.16), transparent),
-    radial-gradient(circle at 85% 20%, rgba(168, 85, 247, 0.22), transparent 34%);
+    radial-gradient(circle at 85% 20%, rgba(99, 102, 241, 0.12), transparent 34%);
   transition: opacity 220ms ease;
 }
 
 .project-card:hover {
   transform: translateY(-8px);
   border-color: rgba(103, 232, 249, 0.38);
-  box-shadow: 0 0 54px rgba(56, 189, 248, 0.16);
+  box-shadow: 0 0 34px rgba(56, 189, 248, 0.1);
 }
 
 .project-card:hover::before {
@@ -209,7 +209,7 @@ body.loaded .loader {
   border: 1px solid rgba(103, 232, 249, 0.12);
   border-radius: 0.45rem;
   background:
-    linear-gradient(135deg, rgba(56, 189, 248, 0.09), rgba(124, 58, 237, 0.11)),
+    linear-gradient(135deg, rgba(56, 189, 248, 0.075), rgba(99, 102, 241, 0.075)),
     repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.05) 0 1px, transparent 1px 24px);
 }
 
@@ -257,73 +257,13 @@ body.loaded .loader {
   color: white;
 }
 
-.grid-cols-22 {
-  grid-template-columns: repeat(22, minmax(0, 1fr));
-}
-
-.blockchain-orbit {
-  position: relative;
-  min-height: 430px;
-  display: grid;
-  place-items: center;
+.learning-card {
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 0.55rem;
-  background:
-    radial-gradient(circle, rgba(56, 189, 248, 0.18), transparent 25%),
-    radial-gradient(circle at 70% 22%, rgba(168, 85, 247, 0.16), transparent 26%),
-    rgba(255, 255, 255, 0.035);
+  background: rgba(255, 255, 255, 0.045);
+  padding: 1.5rem;
   backdrop-filter: blur(18px);
-}
-
-.blockchain-orbit::before,
-.blockchain-orbit::after {
-  content: '';
-  position: absolute;
-  border: 1px solid rgba(103, 232, 249, 0.18);
-  border-radius: 50%;
-}
-
-.blockchain-orbit::before {
-  width: 310px;
-  height: 310px;
-}
-
-.blockchain-orbit::after {
-  width: 210px;
-  height: 210px;
-  border-color: rgba(168, 85, 247, 0.22);
-}
-
-.chain-core {
-  position: relative;
-  z-index: 2;
-  display: grid;
-  height: 112px;
-  width: 112px;
-  place-items: center;
-  border: 1px solid rgba(103, 232, 249, 0.55);
-  border-radius: 50%;
-  background: rgba(2, 6, 23, 0.82);
-  color: white;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 1.65rem;
-  font-weight: 800;
-  box-shadow: 0 0 58px rgba(56, 189, 248, 0.28);
-}
-
-.blockchain-orbit span {
-  --angle: calc(var(--i) * 60deg);
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  height: 18px;
-  width: 18px;
-  border-radius: 50%;
-  background: #67e8f9;
-  box-shadow: 0 0 28px #38bdf8;
-  transform: rotate(var(--angle)) translateX(155px);
-  transform-origin: 0 0;
 }
 
 .contact-link {
@@ -383,15 +323,4 @@ body.loaded .loader {
     display: none;
   }
 
-  .grid-cols-22 {
-    grid-template-columns: repeat(14, minmax(0, 1fr));
-  }
-
-  .blockchain-orbit {
-    min-height: 330px;
-  }
-
-  .blockchain-orbit span {
-    transform: rotate(var(--angle)) translateX(112px);
-  }
 }
